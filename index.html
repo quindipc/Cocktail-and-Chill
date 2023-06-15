@@ -1,25 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css" />
-    <script src = 'script.js' defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src='script.js' defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="./styles/styles.css">
   <title>Cocktails and Chillt</title>
 </head>
+
 <body>
-  <header></header>
-  <section class = 'main'>
-    <div class = 'main__container'>
-      <div class = 'main__container--title'>Discover the Perfect Pairing of Films & Cocktails!</div>
-      <div class = 
+  <!-- Nav -->
+  <header>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo-container">
+          <a href="./index.html">
+            <img src="./assets/logo/Logo-2.png" alt="Cocktail and Chill Logo" class="header__logo">
+          </a>
+        </div>
+      </nav>
+    </header>
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Titles -->
+    <section class='main'>
+      <div class='main__container'>
+        <div class='main__container--title'>Discover The Perfect Pairing of Films & Cocktails!</div>
+        <div class='main__container--dropdown-outer-container'>
+
+          <div class='main__container--movies-dropdown-container'>
+            <div class="main__container--movies-dropdown-container--genre">
+
+              <!-- Movies -->
+              <label for="genre">Genre:</label>
+              <select name="genre" id="genre">
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="romance">Romance</option>
+                <option value="comedy">Comedy</option>
+              </select>
+
+
+            </div>
+            <div class="main__container--movies-dropdown-container--Ratings">
+
+              <label for="ratings">Ratings:</label>
+              <select name="ratings" id="ratings">
+                <option value="six">6 and above</option>
+                <option value="seven">7 and above</option>
+                <option value="eight">8 and above</option>
+                <option value="nine">9 and above</option>
+              </select>
+            </div>
+          </div>
+
+
+          <!-- Drinks -->
+          <div class='main__container--cocktails-dropdown-container'>
+
+            <div class="main__container--cocktails-dropdown-container--glass">
+
+              <label for="glass">Glass:</label>
+
+              <select name="glass" id="type">
+                <option value="cocktail">Cocktail</option>
+                <option value="coffee">Coffee Mug</option>
+                <option value="highball">High Ball</option>
+                <option value="collins">Collins</option>
+              </select>
+            </div>
+
+            <div class="main__container--cocktails-dropdown-container--type">
+              <label for="type">Type:</label>
+              <select name="type" id="type">
+                <option value="Alcoholic">Alcoholic</option>
+                <option value="horror">Non-Alcoholic</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
+        <div class ='main__container--btn-discover'> <button class = 'main__container--btn-discover--actuabtn'>Discover</button></div>
+      </div>
+     
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Contact the Developers</h2>
+      <div class="footer__developers">
+        <div class="footer__developer">
+          <h3 class="footer__developer-name">Chelsea Quindipan</h3>
+          <div class="footer__container-icons">
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-linkedin-3.svg" alt="LinkedIn Icon" class="footer__icon">
+            </a>
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-github-1.svg" alt="Github Icon" class="footer__icon">
+            </a>
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-twitter-1.svg" alt="Twitter Icon" class="footer__icon">
+            </a>
+          </div>
+        </div>
+        <div class="footer__developer">
+          <h3 class="footer__developer-name">Abdullah Muhammad</h3>
+          <div class="footer__container-icons">
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-linkedin-3.svg" alt="LinkedIn Icon" class="footer__icon">
+            </a>
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-github-1.svg" alt="Github Icon" class="footer__icon">
+            </a>
+            <a href="#">
+              <img src="./assets/icons/iconmonstr-twitter-1.svg" alt="Twitter Icon" class="footer__icon">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-
-  </section>
-
     
-    <script src="script.js">
-    </script>
+    <div class="footer__container footer__container--right">
+      <a href="./index.html">
+        <img src="./assets/logo/Logo-1.png" alt="Cocktail and Chill Logo" class="footer__logo">
+      </a>
+      <div class="footer__copyright">
+        <p>&copy; 2021 Cocktail and Chill. All Rights Reserved.</p>
+        <p>Developed by Abdullah & Chelsea</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js">
+  </script>
 </body>
+
 </html>
