@@ -8,7 +8,7 @@
 .footer {
     display: flex;
     flex-direction: row;
-    color: $primary-white;
+    color: $primary-black;
     background-color: $primary-yellow;
     padding: 1rem;
 
@@ -54,12 +54,12 @@
     }
 
     &__logo {
-        padding-top: 2rem;
-        width: 15rem;
+        padding-bottom: 0.5rem;
+        width: 10rem;
     }
 
     &__copyright {
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
 
 }

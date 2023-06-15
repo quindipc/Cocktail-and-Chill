@@ -10,7 +10,8 @@ body {
 }
 
 .header {
-  background-color: #201e1e;
+  background-color: #e3de45;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,8 +28,8 @@ body {
 .footer {
   display: flex;
   flex-direction: row;
-  color: #FFFFFF;
-  background-color: #e2dd49;
+  color: #201e1e;
+  background-color: #e3de45;
   padding: 1rem;
 }
 .footer__container {
@@ -65,23 +66,25 @@ body {
   text-decoration: none;
 }
 .footer__logo {
-  padding-top: 2rem;
-  width: 15rem;
+  padding-bottom: 0.5rem;
+  width: 10rem;
 }
 .footer__copyright {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .main {
   display: flex;
   justify-content: center;
-  height: 110vh;
+  height: 140vh;
 }
 .main__container {
   padding-top: 3rem;
   font-size: large;
 }
 .main__container--title {
+  display: flex;
+  justify-content: center;
   padding-bottom: 3rem;
 }
 .main__container--dropdown-outer-container {
@@ -109,4 +112,11 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+.main__container__result {
+  display: flex;
+  padding-top: 5rem;
+}
+.main__container__result--movie-container {
+  padding-right: 10rem;
 }/*# sourceMappingURL=styles.css.map */

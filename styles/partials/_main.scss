@@ -7,7 +7,7 @@
   display: flex;
     justify-content: center;
    
-    height: 110vh;
+    height: 140vh;
 
 
   &__container {
@@ -17,6 +17,8 @@
     
 
     &--title {
+      display: flex;
+      justify-content: center;
       padding-bottom: 3rem;
       
       
@@ -58,6 +60,17 @@
         cursor: pointer;
        
       }
+    }
+
+    &__result{
+      display: flex;
+      padding-top: 5rem;
+
+      &--movie-container{
+       
+        padding-right: 10rem;
+      }
+
     }
    
    
