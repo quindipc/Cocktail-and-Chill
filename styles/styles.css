@@ -29,9 +29,12 @@ body {
   flex-direction: row;
   color: #FFFFFF;
   background-color: #e2dd49;
-  padding: 2.25rem 1rem;
+  padding: 1rem;
 }
 .footer__container {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
   padding: 1rem;
 }
 .footer__title {
@@ -39,10 +42,10 @@ body {
 }
 .footer__container-right {
   display: flex;
+  flex: 1;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  margin-left: auto;
 }
 .footer__developers {
   padding: 1rem;
@@ -55,10 +58,24 @@ body {
 .footer__developer-name {
   margin-bottom: 0.5rem;
 }
+.footer__icon {
+  padding: 1rem;
+}
+.footer__link {
+  text-decoration: none;
+}
+.footer__logo {
+  padding-top: 2rem;
+  width: 15rem;
+}
+.footer__copyright {
+  padding-top: 2rem;
+}
+
 .main {
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 110vh;
 }
 .main__container {
   padding-top: 3rem;
@@ -80,13 +97,15 @@ body {
 .main__container--btn-discover {
   display: flex;
   justify-content: center;
+  padding-top: 2rem;
 }
-.main__container--btn-discover--actualbtn {
-  width: 100%;
+.main__container--btn-discover--actuabtn {
+  width: 40%;
   font-size: 1rem;
   background-color: #201e1e;
-  padding: 14px 20px;
-  margin: 8px 0;
+  color: white;
+  padding: 14px 25px;
+  margin: 8px 0px;
   border: none;
   border-radius: 4px;
   cursor: pointer;

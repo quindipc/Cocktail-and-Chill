@@ -10,10 +10,12 @@
     flex-direction: row;
     color: $primary-white;
     background-color: $primary-yellow;
-    padding: 2.25rem 1rem;
+    padding: 1rem;
 
     &__container {
-        // margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        flex: 5;
         padding: 1rem;
     }
 
@@ -23,10 +25,10 @@
 
     &__container-right {
         display: flex;
+        flex: 1;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        margin-left: auto;
     }
 
     &__developers {
@@ -43,6 +45,21 @@
         margin-bottom: 0.5rem;
     }
 
-    &__icon {}
+    &__icon {
+        padding: 1rem;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__logo {
+        padding-top: 2rem;
+        width: 15rem;
+    }
+
+    &__copyright {
+        padding-top: 2rem;
+    }
 
 }

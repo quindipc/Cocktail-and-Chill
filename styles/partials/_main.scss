@@ -7,7 +7,7 @@
   display: flex;
     justify-content: center;
    
-    height: 90vh;
+    height: 110vh;
 
 
   &__container {
@@ -43,17 +43,24 @@
   &--btn-discover{
     display: flex;
     justify-content: center;
+    padding-top: 2rem;
+
+    &--actuabtn{
+      
+        width: 40%;
+        font-size: 1rem;
+        background-color: $primary-black;
+        color: white;
+        padding: 14px 25px;
+        margin: 8px 0px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+       
+      }
+    }
+   
    
   }
-  &--btn-discover--actualbtn{
-    width: 100%;
-    font-size: 1rem;
-    background-color: $primary-black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-}
+ 
 }
