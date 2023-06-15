@@ -35,22 +35,22 @@
         <div class='main__container--title'>Discover The Perfect Pairing of Films & Cocktails!</div>
         <div class='main__container--dropdown-outer-container'>
 
-          <div class='main__container--movies-dropdown-container'>
-            <div class="main__container--movies-dropdown-container--genre">
+          <!-- <div class='main__container--movies-dropdown-container'> -->
+            <!-- <form class="main__container--movies-dropdown-container--form"> -->
+            <!-- <div class="main__container--movies-dropdown-container--genre">
 
-              <!-- Movies -->
+
               <label for="genre">Genre:</label>
               <select name="genre" id="genre">
                 <option value="action">Action</option>
                 <option value="horror">Horror</option>
                 <option value="romance">Romance</option>
                 <option value="comedy">Comedy</option>
-              </select>
+              </select> -->
 
 
-            </div>
-            <div class="main__container--movies-dropdown-container--Ratings">
-
+            <!-- </div> -->
+            <!-- <div class="main__container--movies-dropdown-container--Ratings">
               <label for="ratings">Ratings:</label>
               <select name="ratings" id="ratings">
                 <option value="six">6 and above</option>
@@ -58,48 +58,52 @@
                 <option value="eight">8 and above</option>
                 <option value="nine">9 and above</option>
               </select>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
 
 
           <!-- Drinks -->
-          <div class='main__container--cocktails-dropdown-container'>
 
-            <div class="main__container--cocktails-dropdown-container--glass">
+          <!-- Glass drop down -->
+          <!-- <div class='main__container--cocktails-dropdown-container'> -->
 
+            <!-- <div class="main__container--cocktails-dropdown-container--glass">
               <label for="glass">Glass:</label>
-
               <select name="glass" id="type">
                 <option value="cocktail">Cocktail</option>
                 <option value="coffee">Coffee Mug</option>
                 <option value="highball">High Ball</option>
                 <option value="collins">Collins</option>
               </select>
-            </div>
+            </div> -->
 
-            <div class="main__container--cocktails-dropdown-container--type">
+            <!-- Alcoholic or non Alcoholic type -->
+            <!-- <div class="main__container--cocktails-dropdown-container--type">
               <label for="type">Type:</label>
               <select name="type" id="type">
                 <option value="Alcoholic">Alcoholic</option>
-                <option value="horror">Non-Alcoholic</option>
+                <option value="Non-Alcoholic">Non-Alcoholic</option>
               </select>
-            </div>
+            </div> -->
+          <!-- </div> -->
 
-          </div>
         </div>
-        <div class ='main__container--btn-discover'> <button class = 'main__container--btn-discover--actuabtn'>Discover</button></div>
+        <div class ='main__container--btn-discover'> <button type = 'submit' class = 'main__container--btn-discover--actuabtn' id="discoverButton">Discover</button></div>
+
+      </form>
 
         <div class = 'main__container__result'>
           <div class = 'main__container__result--movie-container'>
-            <div class = 'main__container__result--movie-container--title'> Movie Title PlaceHolder</div>
+            <div class = 'main__header' id="movieTitle"></div>
             <div class = 'main__container__result--movie-container--image'>
-              <img src = '//unsplash.it/300/300'/>
+              <img class="main__image" id="movieImage" src = 'https://via.placeholder.com/400x300?text=Let+me+guess+your+movie...'/>
             </div>
           </div>
-          <div class = main__container__result--cocktail-container>
-            <div class = 'main__container__result--cocktail-container--title'>Coktail Name Placeholder</div>
+          
+          <div class = main__container__result--result-container>
+            <div class = 'main__header' id="drinkResult"></div>
             <div class = 'main__container__result--cocktail-container--image'>
-              <img src = '//unsplash.it/300/300'/>
+              <img class="main__image" id="drinkImage" src = 'https://via.placeholder.com/400x300?text=Let+me+guess+your+cocktail...' />
             </div>
 
 
@@ -111,6 +115,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer__container">
       <h2 class="footer__title">Contact the Developers</h2>
@@ -151,7 +156,7 @@
         <img src="./assets/logo/Logo-1.png" alt="Cocktail and Chill Logo" class="footer__logo">
       </a>
       <div class="footer__copyright">
-        <p>&copy; 2021 Cocktail and Chill. All Rights Reserved.</p>
+        <p>&copy; 2023 Cocktail and Chill. All Rights Reserved.</p>
         <p>Developed by Abdullah & Chelsea</p>
       </div>
     </div>

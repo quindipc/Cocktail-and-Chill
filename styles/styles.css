@@ -76,7 +76,19 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  height: 140vh;
+  height: 120vh;
+}
+.main__image {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.main__header {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0 2rem;
+  text-decoration: underline;
 }
 .main__container {
   padding-top: 3rem;
@@ -85,22 +97,17 @@ body {
 .main__container--title {
   display: flex;
   justify-content: center;
-  padding-bottom: 3rem;
-}
-.main__container--dropdown-outer-container {
-  display: flex;
-  justify-content: space-between;
-}
-.main__container--movies-dropdown-container--genre {
+  font-style: italic;
+  padding-top: 10rem;
   padding-bottom: 2rem;
-}
-.main__container--cocktails-dropdown-container--glass {
-  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 .main__container--btn-discover {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .main__container--btn-discover--actuabtn {
   width: 40%;
@@ -119,4 +126,15 @@ body {
 }
 .main__container__result--movie-container {
   padding-right: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__container__result--movie-container--image {
+  display: flex;
+  justify-content: center;
+}
+.main__container__result--cocktail-container--image {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */

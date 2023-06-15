@@ -5,50 +5,45 @@
 
 .main {
   display: flex;
-    justify-content: center;
-   
-    height: 140vh;
+  justify-content: center;
+  height: 120vh;
 
+  &__image {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0 2rem;
+    text-decoration: underline;
+  }
 
   &__container {
     padding-top: 3rem;
     font-size: large;
-   
-    
 
     &--title {
       display: flex;
       justify-content: center;
-      padding-bottom: 3rem;
-      
-      
-    }
-
-    &--movies-dropdown-container {
-      
-    }
-    &--dropdown-outer-container{
-      display: flex;
-      justify-content: space-between;
-      
-    }
-
-    &--movies-dropdown-container--genre {
+      font-style: italic;
+      padding-top: 10rem;
       padding-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+  
     }
-    &--movies-dropdown-container--Ratings{
-      
-  }
-  &--cocktails-dropdown-container--glass{
-    padding-bottom: 2rem;
-  }
-  &--btn-discover{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
 
-    &--actuabtn{
-      
+    &--btn-discover {
+      display: flex;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      &--actuabtn {
         width: 40%;
         font-size: 1rem;
         background-color: $primary-black;
@@ -58,22 +53,35 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-       
       }
     }
 
-    &__result{
+    &__result {
       display: flex;
       padding-top: 5rem;
 
-      &--movie-container{
-       
+      &--movie-container {
         padding-right: 10rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // margin-right: auto;
+        &--image{
+          display: flex;
+          justify-content: center;
+        }
+      }
+      &--cocktail-container--image{
+        display: flex;
+          justify-content: center;
       }
 
+
+  
     }
-   
-   
+
+
   }
- 
+
 }
+
