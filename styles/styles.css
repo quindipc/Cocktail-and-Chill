@@ -1,1 +1,93 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #201e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+}
+.header__logo {
+  height: 7rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  background-color: #e2dd49;
+  padding: 2.25rem 1rem;
+}
+.footer__container {
+  padding: 1rem;
+}
+.footer__title {
+  padding: 1rem;
+}
+.footer__container-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.footer__developers {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.footer__developer {
+  margin-right: 2rem;
+}
+.footer__developer-name {
+  margin-bottom: 0.5rem;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+.main__container {
+  padding-top: 3rem;
+  font-size: large;
+}
+.main__container--title {
+  padding-bottom: 3rem;
+}
+.main__container--dropdown-outer-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main__container--movies-dropdown-container--genre {
+  padding-bottom: 2rem;
+}
+.main__container--cocktails-dropdown-container--glass {
+  padding-bottom: 2rem;
+}
+.main__container--btn-discover {
+  display: flex;
+  justify-content: center;
+}
+.main__container--btn-discover--actualbtn {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #201e1e;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

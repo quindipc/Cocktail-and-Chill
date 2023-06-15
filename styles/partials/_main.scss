@@ -1,0 +1,59 @@
+@use "../partials/resets";
+@use "../partials/variables"as *;
+@use "../partials/mixins"as *;
+
+
+.main {
+  display: flex;
+    justify-content: center;
+   
+    height: 90vh;
+
+
+  &__container {
+    padding-top: 3rem;
+    font-size: large;
+   
+    
+
+    &--title {
+      padding-bottom: 3rem;
+      
+      
+    }
+
+    &--movies-dropdown-container {
+      
+    }
+    &--dropdown-outer-container{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+
+    &--movies-dropdown-container--genre {
+      padding-bottom: 2rem;
+    }
+    &--movies-dropdown-container--Ratings{
+      
+  }
+  &--cocktails-dropdown-container--glass{
+    padding-bottom: 2rem;
+  }
+  &--btn-discover{
+    display: flex;
+    justify-content: center;
+   
+  }
+  &--btn-discover--actualbtn{
+    width: 100%;
+    font-size: 1rem;
+    background-color: $primary-black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+}

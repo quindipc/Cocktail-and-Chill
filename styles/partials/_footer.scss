@@ -1,0 +1,48 @@
+@use "../partials/resets";
+@use "../partials/variables"as *;
+@use "../partials/mixins"as *;
+
+
+// Footer Styles 
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color: $primary-white;
+    background-color: $primary-yellow;
+    padding: 2.25rem 1rem;
+
+    &__container {
+        // margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    &__title {
+        padding: 1rem;
+    }
+
+    &__container-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    &__developers {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__developer {
+        margin-right: 2rem;
+    }
+
+    &__developer-name {
+        margin-bottom: 0.5rem;
+    }
+
+    &__icon {}
+
+}
